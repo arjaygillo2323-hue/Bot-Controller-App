@@ -6,9 +6,11 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
+
     "ios": {
       "supportsTablet": true
     },
+
     "android": {
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
@@ -16,10 +18,33 @@
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
-      "predictiveBackGestureEnabled": false
+
+      "predictiveBackGestureEnabled": false,
+
+      "usesCleartextTraffic": true,
+
+      "package": "com.arjaydev.RobotControllerApp",
+
+      "permissions": [
+        "INTERNET",
+        "ACCESS_NETWORK_STATE",
+        "ACCESS_WIFI_STATE",
+        "CHANGE_WIFI_MULTICAST_STATE"
+      ]
     },
+
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+
+    "extra": {
+      "eas": {
+        "projectId": "6de08b68-fbf9-4861-b913-791ef0fb36f9"
+      }
+    },
+
+    "plugins": [
+      "expo-image"
+    ]
   }
 }
